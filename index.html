@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg" alt="Logo Pokémon">
+    <button id="start-button">START</button>
+  </div>
+  <div class="container">
+    <div class="card">
+      <img id="pokemon-img" src="" alt="Imagem do Pokémon">
+      <h2 id="pokemon-name" class="glow-text">Nome do Pokémon</h2>
+      <p id="pokemon-type">Tipo: </p>
+      <h3>Habilidades:</h3>
+      <ul id="pokemon-abilities"></ul>
+      <ul id="pokemon-abilities">
+        <li>
+          <span class="label">Static</span>
+          <div class="bar">
+            <div class="fill" style="width: 60%"></div>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="navigation">
+      <button onclick="prevPokemon()">⬅</button>
+      <button onclick="nextPokemon()">➡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
